@@ -1,0 +1,23 @@
+.card
+	height: 350px
+	border-radius: 12px
+	position: relative
+	display: flex
+	font-weight: bold
+	color: $white
+	flex-direction: column
+	@extend .box-shadow
+	margin-bottom: 30px
+	&:last-child
+		margin-bottom: 0
+	&__content
+		position: absolute
+		bottom: 0
+	&__text
+		font-size: 34px
+		text-transform: uppercase
+		line-height: 28px
+		display: flex
+		padding: 20px
+		color: $white !important
+

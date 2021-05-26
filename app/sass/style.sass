@@ -1,0 +1,55 @@
+@import "_vars"
+
+@import "_header"
+@import "_card"
+@import "_button"
+@import "_nav"
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 25px
+	overflow-x: hidden
+	opacity: 1
+	color: $black
+
+.container
+	min-width: 320px
+	max-width: 520px
+
+.content
+	padding: 0 15px
+
+.bottom-line
+	padding: 10px
+	background-color: rgba($gray, 0.65)
+	@extend .glass
+	display: flex
+	&__left,
+	&__right,
+	&__center
+		display: flex
+		align-items: center
+		justify-content: center
+	&__left,
+	&__right
+		width: 25%
+	&__center
+		width: 50%
+	&__img-wrapper
+		background-color: #000
+		width: 32px
+		height: 32px
+		border-radius: 12px
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 5px
+	&__ico
+		height: 32px
+		height: 32px

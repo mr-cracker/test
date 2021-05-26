@@ -1,0 +1,31 @@
+.nav
+	position: fixed
+	background-color: rgba(darken($gray, 25%), 0.65)
+	@extend .glass
+	z-index: 999
+	width: 100%
+	bottom: 0
+	&__list
+		padding-bottom: 20px
+		list-style-type: none
+		justify-content: center
+		padding: 20px
+		display: flex
+		@extend .tr
+	&__item
+		padding: 0 10px
+	&__span
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__link
+		text-decoration: none
+		color: $gray
+		@extend .tr
+		cursor: pointer
+		&:active,
+		&:focus
+			color: blue
+
+		
